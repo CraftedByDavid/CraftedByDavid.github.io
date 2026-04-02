@@ -54,26 +54,32 @@
 
     <h3>🧠 Reconfigurable FPGA CNN Accelerator</h3>
 
-    <p>
-      FPGA-based hardware accelerator for lightweight CNN inference,
-      optimized for edge devices using parallel processing and DMA-based transfer.
-    </p>
+   <p>
+  Designed and implemented a <strong>reconfigurable FPGA-based accelerator</strong> 
+  for lightweight CNN inference targeting edge devices. The architecture features 
+  a <strong>16-lane parallel compute engine</strong>, <strong>128-bit BRAM-based memory system</strong>, 
+  and <strong>INT8 quantization</strong> for high efficiency.
+</p>
 
-    <ul>
-      <li>⚡ 16-lane parallel architecture</li>
-      <li>🚀 ~11× speedup using AXI CDMA over MMIO</li>
-      <li>🔥 ~3000× faster than CPU inference</li>
-      <li>💾 128-bit BRAM optimization</li>
-      <li>🧠 Supports convolution, pooling, depthwise ops</li>
-    </ul>
+<p>
+  Optimized data movement using <strong>AXI CDMA</strong>, enabling high-speed 
+  DDR-to-BRAM transfers and significantly reducing CPU overhead. The design supports 
+  convolution, depthwise convolution, pooling, and activation operations.
+</p>
+
+<p>
+  Achieved up to <strong>3146× speedup over CPU inference</strong> and 
+  <strong>~11× improvement</strong> compared to MMIO-based FPGA execution, 
+  demonstrating real-time performance for edge AI applications.
+</p>
 
     <p class="tech">
-      <strong>Tech:</strong> Verilog, SystemVerilog, AXI, CDMA, PYNQ, Vivado
-    </p>
+  <strong>Tech:</strong> Verilog (RTL), AXI4/AXI-Lite, AXI CDMA, PYNQ (Python), Vivado
+</p>
 
-    <p class="tags">
-      FPGA • CNN • AXI • DMA • RTL • Edge AI
-    </p>
+<p class="tags">
+  FPGA • CNN Acceleration • RTL Design • AXI • DMA • Edge AI • PYNQ-ZU
+</p>
 
     <a href="https://github.com/CraftedByDavid/reconfigurable-fpga-accelerator-for-lightweight-cnns-on-edge-devices" target="_blank" class="btn">
     🔗 View Full Project
