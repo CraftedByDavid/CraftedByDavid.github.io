@@ -8,93 +8,89 @@
 
 <body>
 
-<!-- 🔷 HEADER -->
 <header>
   <h1>David Paul</h1>
   <p>FPGA Engineer | RTL Design | Edge AI Acceleration</p>
 </header>
 
-<!-- 🔷 ABOUT -->
 <section class="about">
   <h2>About Me</h2>
   <p>
-    I am an FPGA Engineer specializing in hardware acceleration for AI and high-performance digital systems. 
-    My work focuses on designing efficient RTL architectures and deploying lightweight CNN models on FPGA platforms 
-    such as Zynq UltraScale+.
-  </p>
-
-  <p>
-    I have hands-on experience in Verilog/SystemVerilog, AXI-based system design, DMA optimization, and 
-    hardware–software co-design. I have developed reconfigurable CNN accelerators, implemented MobileNetV2 
-    inference on FPGA, and worked on RISC-V-based hardware systems for real-time applications.
-  </p>
-
-  <p>
-    In addition, I have a strong background in UVM-based functional verification, including constrained-random 
-    verification environments and SystemVerilog Assertions (SVA).
-  </p>
-
-  <p>
-    I am particularly interested in edge AI, autonomous systems, and building scalable hardware accelerators 
-    for next-generation intelligent devices.
+    FPGA Engineer specializing in hardware acceleration for AI and high-performance digital systems. 
+    Experienced in RTL design, AXI-based architectures, and deploying CNN models on Zynq UltraScale+ platforms.
   </p>
 </section>
 
-<!-- 🔷 PROJECTS -->
+<!-- 🔥 FPGA SECTION -->
 <section class="projects">
-  <h2>🚀 Featured Projects</h2>
+  <h2>⚡ FPGA & Hardware Acceleration</h2>
 
-  <!-- ⭐ FEATURED PROJECT -->
-  <div class="card featured">
+  <div class="project-grid">
 
-    <img 
-  src="https://raw.githubusercontent.com/CraftedByDavid/reconfigurable-fpga-accelerator-for-lightweight-cnns-on-edge-devices/main/Project_diagrams/core_architecture.png" 
-  alt="FPGA CNN Accelerator Core Architecture" 
-  class="project-img">
+    <div class="card featured">
+      <img 
+        src="https://raw.githubusercontent.com/CraftedByDavid/reconfigurable-fpga-accelerator-for-lightweight-cnns-on-edge-devices/main/Project_diagrams/core_architecture.png"
+        class="project-img">
 
-    <h3>🧠 Reconfigurable FPGA CNN Accelerator</h3>
+      <h3>Reconfigurable FPGA CNN Accelerator</h3>
 
-   <p>
-  Designed and implemented a <strong>reconfigurable FPGA-based accelerator</strong> 
-  for lightweight CNN inference targeting edge devices. The architecture features 
-  a <strong>16-lane parallel compute engine</strong>, <strong>128-bit BRAM-based memory system</strong>, 
-  and <strong>INT8 quantization</strong> for high efficiency.
-</p>
+      <p>
+        High-performance FPGA accelerator for CNN inference with 16-lane parallel architecture,
+        AXI CDMA-based transfer, and INT8 optimization.
+      </p>
 
-<p>
-  Optimized data movement using <strong>AXI CDMA</strong>, enabling high-speed 
-  DDR-to-BRAM transfers and significantly reducing CPU overhead. The design supports 
-  convolution, depthwise convolution, pooling, and activation operations.
-</p>
+      <p class="tech">
+        <strong>Tech:</strong> Verilog, AXI, CDMA, PYNQ, Vivado
+      </p>
 
-<p>
-  Achieved up to <strong>3146× speedup over CPU inference</strong> and 
-  <strong>~11× improvement</strong> compared to MMIO-based FPGA execution, 
-  demonstrating real-time performance for edge AI applications.
-</p>
-
-    <p class="tech">
-  <strong>Tech:</strong> Verilog (RTL), AXI4/AXI-Lite, AXI CDMA, PYNQ (Python), Vivado
-</p>
-
-<p class="tags">
-  FPGA • CNN Acceleration • RTL Design • AXI • DMA • Edge AI • PYNQ-ZU
-</p>
-
-    <a href="https://github.com/CraftedByDavid/reconfigurable-fpga-accelerator-for-lightweight-cnns-on-edge-devices" target="_blank" class="btn">
-    🔗 View Full Project
-    </a>
+      <a href="https://github.com/CraftedByDavid/reconfigurable-fpga-accelerator-for-lightweight-cnns-on-edge-devices" target="_blank" class="btn">
+        View Project
+      </a>
+    </div>
 
   </div>
-
 </section>
 
-<!-- 🔷 CONTACT -->
+<!-- 🔧 RTL SECTION -->
+<section class="projects">
+  <h2>🔧 RTL Design Projects</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>UART Controller (RTL Design)</h3>
+      <p>Designed UART communication module with configurable baud rate and FIFO buffering.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 🧪 UVM SECTION -->
+<section class="projects">
+  <h2>🧪 Verification (UVM)</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>AXI Interconnect Verification</h3>
+      <p>UVM-based constrained-random verification of AXI3 interconnect.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 🔌 EMBEDDED -->
+<section class="projects">
+  <h2>🔌 Embedded Systems</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Smart Energy Meter</h3>
+      <p>Embedded system for real-time energy monitoring using microcontrollers and sensors.</p>
+    </div>
+  </div>
+</section>
+
 <section class="contact">
   <h2>📬 Contact</h2>
-  <p>Email: your@email.com</p>
+  <p>Email: david02paul@gmail.com</p>
   <p>GitHub: https://github.com/CraftedByDavid</p>
-  <p>LinkedIn: (add your link)</p>
 </section>
 
 </body>
