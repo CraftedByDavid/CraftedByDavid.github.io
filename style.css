@@ -103,25 +103,3 @@ h2 {
 .contact p {
   margin: 8px 0;
 }
-/* 🔥 GRID LAYOUT */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-/* 🔥 SECTION SPACING */
-.projects {
-  margin-top: 30px;
-}
-
-/* 🔥 SMALL CARD */
-.card h3 {
-  margin-top: 10px;
-}
-
-/* 🔥 CLEAN BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-}
