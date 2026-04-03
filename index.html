@@ -94,36 +94,40 @@
     alt="2D Convolution using GeMM on FPGA" 
     class="project-img">
 
-  <h3>⚡ Hardware Acceleration of 2D Convolution using GeMM</h3>
+  <h3>⚡ FPGA Acceleration of 2D Convolution (GeMM-Based)</h3>
 
   <p>
-    Designed and implemented an FPGA-based accelerator for 
-    <strong>2D convolution using the GeMM (General Matrix Multiplication) transformation</strong>, 
-    enabling convolution operations to be efficiently mapped into matrix multiplication for parallel execution.
+    Built a high-performance <strong>FPGA accelerator for 2D convolution</strong> by transforming 
+    convolution into <strong>matrix multiplication (im2col + GeMM)</strong>, enabling efficient 
+    parallel execution on hardware.
   </p>
 
   <p>
-    Developed a high-performance dataflow architecture with optimized memory access patterns, 
-    focusing on <strong>parallelism, data reuse, and efficient on-chip buffering</strong> to maximize throughput 
-    and minimize latency.
+    Designed a custom <strong>FSM-driven dataflow architecture (IPICU)</strong> with optimized 
+    memory access, line buffering, and patch reuse to minimize bandwidth overhead and 
+    maximize throughput.
   </p>
 
   <p>
-    The design was implemented at RTL level and validated on FPGA, demonstrating a scalable and efficient 
-    approach for accelerating convolution-heavy workloads in modern CNNs.
+    Implemented and evaluated multiple execution modes:
+    <strong>full-frame</strong> (resource-efficient), 
+    <strong>segmented-frame</strong> (high parallelism), and 
+    <strong>multi-kernel</strong> (throughput scaling).
   </p>
 
   <p>
-    This project highlights practical hardware-software co-design principles and serves as a foundation 
-    for building high-performance deep learning accelerators.
+    Achieved up to <strong>10–16× speedup</strong> using segmentation and 
+    <strong>~3× acceleration</strong> over ARM-based processing systems, demonstrating 
+    the effectiveness of FPGA-based CNN acceleration.
   </p>
 
   <p class="tech">
-    <strong>Tech:</strong> Verilog (RTL), FPGA Design, GeMM Transformation, Vivado
+    <strong>Tech:</strong> Verilog (RTL), FPGA (Zynq UltraScale+, Spartan-7), 
+    Vivado, GeMM (im2col), Hardware Dataflow Design
   </p>
 
   <p class="tags">
-    FPGA • CNN Acceleration • GeMM • RTL Design • Parallel Computing • Hardware Optimization
+    FPGA • CNN Acceleration • GeMM • RTL Design • Parallel Processing • Embedded Systems
   </p>
 
   <a href="https://github.com/CraftedByDavid/Hardware-Acceleration-of-2D-Convolution-using-GeMM-Algorithm-on-FPGA" target="_blank" class="btn">
