@@ -90,37 +90,24 @@
   <h3>⚡ FPGA Acceleration of 2D Convolution (GeMM-Based)</h3>
 
   <p>
-    Built a high-performance <strong>FPGA accelerator for 2D convolution</strong> by transforming 
-    convolution into <strong>matrix multiplication (im2col + GeMM)</strong>, enabling efficient 
-    parallel execution on hardware.
+    Built an <strong>FPGA-based accelerator for 2D convolution</strong> using 
+    <strong>im2col + GeMM transformation</strong> for efficient parallel computation.
   </p>
 
-  <p>
-    Designed a custom <strong>FSM-driven dataflow architecture (IPICU)</strong> with optimized 
-    memory access, line buffering, and patch reuse to minimize bandwidth overhead and 
-    maximize throughput.
-  </p>
-
-  <p>
-    Implemented and evaluated multiple execution modes:
-    <strong>full-frame</strong> (resource-efficient), 
-    <strong>segmented-frame</strong> (high parallelism), and 
-    <strong>multi-kernel</strong> (throughput scaling).
-  </p>
-
-  <p>
-    Achieved up to <strong>10–16× speedup</strong> using segmentation and 
-    <strong>~3× acceleration</strong> over ARM-based processing systems, demonstrating 
-    the effectiveness of FPGA-based CNN acceleration.
-  </p>
+  <ul class="highlights">
+    <li><strong>FSM-driven dataflow (IPICU)</strong> for structured execution</li>
+    <li>Optimized <strong>memory access, line buffering, and patch reuse</strong></li>
+    <li>Supports <strong>full-frame, segmented, and multi-kernel modes</strong></li>
+    <li>Scalable architecture for larger inputs and multiple kernels</li>
+  </ul>
 
   <p class="tech">
     <strong>Tech:</strong> Verilog (RTL), FPGA (Zynq UltraScale+, Spartan-7), 
-    Vivado, GeMM (im2col), Hardware Dataflow Design
+    Vivado, GeMM (im2col), Dataflow Design
   </p>
 
   <p class="tags">
-    FPGA • CNN Acceleration • GeMM • RTL Design • Parallel Processing 
+    FPGA • CNN Acceleration • GeMM • RTL Design • Parallel Processing
   </p>
 
   <a href="https://github.com/CraftedByDavid/Hardware-Acceleration-of-2D-Convolution-using-GeMM-Algorithm-on-FPGA" target="_blank" class="btn">
@@ -133,31 +120,23 @@
 <div class="card">
 
   <img 
-  src="https://raw.githubusercontent.com/CraftedByDavid/CraftedByDavid.github.io/main/portfolio_images/pl.png" 
-  alt="3x3 GEMM Accelerator FPGA" 
-  class="project-img">
+    src="https://raw.githubusercontent.com/CraftedByDavid/CraftedByDavid.github.io/main/portfolio_images/pl.png" 
+    alt="3x3 GEMM Accelerator FPGA" 
+    class="project-img">
 
   <h3>⚡ 3×3 GEMM Accelerator in Verilog</h3>
 
   <p>
-    Designed and implemented a <strong>hardware-accelerated 3×3 matrix multiplication (GEMM) engine</strong> 
-    using Verilog, optimized for efficient execution on FPGA using on-chip memory.
+    Built a <strong>hardware-accelerated 3×3 GEMM engine</strong> in Verilog for efficient 
+    matrix multiplication on FPGA.
   </p>
 
-  <p>
-    Built a <strong>BRAM-centric architecture</strong> where matrix rows and columns are streamed from 
-    dedicated memory blocks, enabling structured data access and minimizing memory bottlenecks.
-  </p>
-
-  <p>
-    Developed an <strong>FSM-controlled compute pipeline</strong> to orchestrate memory reads, 
-    parallel multiply-accumulate (MAC) operations, and output storage with precise timing control.
-  </p>
-
-  <p>
-    Verified functionality on hardware using <strong>Integrated Logic Analyzer (ILA)</strong>, 
-    ensuring correct computation and real-time observability of internal signals.
-  </p>
+  <ul class="highlights">
+    <li><strong>BRAM-based architecture</strong> for row/column data streaming</li>
+    <li><strong>FSM-controlled pipeline</strong> for coordinated compute and memory access</li>
+    <li>Parallel <strong>MAC operations</strong> for low-latency computation</li>
+    <li>Hardware validation using <strong>Integrated Logic Analyzer (ILA)</strong></li>
+  </ul>
 
   <p class="tech">
     <strong>Tech:</strong> Verilog (RTL), FPGA Design, BRAM Architecture, FSM Design, Vivado, ILA
